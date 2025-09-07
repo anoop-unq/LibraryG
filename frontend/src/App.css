@@ -1,0 +1,78 @@
+/* src/App.css */
+.App {
+  text-align: left;
+}
+
+/* src/App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.App {
+  width: 100%;
+  position: relative;
+}
+
+/* Ensure all direct children of App don't cause overflow */
+.App > * {
+  max-width: 100%;
+}
+
+/* Responsive container for all pages */
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Prevent horizontal scrolling in tables */
+table {
+  width: 100%;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure flexbox doesn't cause overflow */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Grid layout prevention */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
