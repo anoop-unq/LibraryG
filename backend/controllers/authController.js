@@ -37,7 +37,7 @@ export const register = async (req, res) => {
       ),
       httpOnly: true,
        secure: process.env.NODE_ENV === 'production',
-      sameSite:  'None' ,
+       sameSite:  'None' ,
     });
     
     // Remove password from output
