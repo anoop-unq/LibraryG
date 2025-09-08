@@ -31,7 +31,7 @@ export const register = async (req, res) => {
     // const isProduction = process.env.NODE_ENV === 'production';
     
     // Send cookie with token directly - PRODUCTION SETTINGS
-    res.cookie('token', token, {
+    res.cookie('jwt', token, {
       expires: new Date(
         Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
       ),
